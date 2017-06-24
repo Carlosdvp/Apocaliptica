@@ -1,0 +1,127 @@
+/* --------------------------------------
+Main Page Styles
+----------------------------------------*/
+
+.sepia-filter { 
+  -webkit-filter: sepia(80%);
+}
+
+
+
+
+/* --------------------------------------
+Jumbotron
+----------------------------------------*/
+
+#titulo-principal {
+  /* font-weight: normal; */
+}
+
+#title-gradient {
+  font-weight: lighter;
+}
+
+#logo-follower {
+  font-size: 0.75em;
+}
+
+.jumbotron {
+  background-color: rgba(36, 43, 34, .85);
+  /* background-image: url('../pics/Proyectos/Bingo-sur/bingo-3.jpg'); */
+}
+
+h1 {
+  margin-top: 1.5em;
+  padding-bottom: 2em;
+}
+
+
+/* --------------------------------------
+Perfil 
+----------------------------------------*/
+
+.enfasis-logo {
+  color: red;
+}
+
+
+/* --------------------------------------
+Navbar
+----------------------------------------*/
+
+.navbar {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+
+
+/* --------------------------------------
+Proyectos
+----------------------------------------*/
+
+
+
+
+
+
+/* --------------------------------------
+Servicios
+----------------------------------------*/
+
+
+
+
+
+
+/* --------------------------------------
+Contacto
+----------------------------------------*/
+
+
+
+
+/* --------------------------------------
+Footer
+----------------------------------------*/
+
+.footer {
+  background-color: rgba(0, 0, 0, .7);
+}
+
+footer a {
+  color: rgba(0, 0, 0, .6);
+}
+
+footer a:hover, a:focus, a:active {
+  color: rgba(119, 19, 5, .8);
+}
+
+#footer-logo {
+  font-weight: bold;
+  letter-spacing: 0.3em;
+}
+
+/* --------------------------------------
+Media Queries
+----------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+  #small-on-xs {
+    font-size: 1.15em;
+  }
+  h1.display-2 {
+    font-size: 3em;
+    margin-top: 2em;
+  }
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 750px) {
+  h1.display-2 {
+    font-size: 4em;
+    margin-top: 1.75em;
+  }
+  h1 {
+    padding-bottom: 1em;
+  }
+}

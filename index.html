@@ -13,31 +13,28 @@
     <link rel="stylesheet" href="css/custom-styles.css">
   </head>
 
-  <body>
+  <body id="inicio" data-spy="scroll" data-target=".navbar" data-offset="150">
 
     <!-- Navbar Fixed top-->
-    <nav class="navbar fixed-top navbar-toggleable-sm navbar-inverse py-4">
+    <nav class="navbar fixed-top navbar-toggleable-sm navbar-inverse py-4" id="top-navbar">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <a class="navbar-brand" id="small-on-xs" href="#home">
+      <a class="navbar-brand" id="small-on-xs" href="#inicio">
         <img src="pics/icon.JPG" width="40" height="40" alt="Apocaliptica logotipo"><span class="ml-4 enfasis-logo">Arq</span>uitectura Apocalíptica
       </a>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#inicio">Inicio</a>
+            <a class="nav-link" href="#inicio">Início</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#proyectos">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#perfil">Perfíl</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#servicios">Servicios</a>
+            <a class="nav-link" href="#presentación">Presentación</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contacto">Contacto</a>
@@ -49,30 +46,24 @@
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid text-white">
-      <div class="container">
-        <h1 class="mb-5 text-center display-2" id="titulo-principal"><span class="enfasis-logo">ARQ</span>UITECTURA <span id="title-gradient">APOCALÍPTICA</span> <span id="logo-follower"><small>Srl.</small></span></h1>
+      <div class="container" id="inicio">
+        <h1 class="mb-5 text-center display-3" id="titulo-principal"><span class="enfasis-logo">ARQ</span>UITECTURA <span id="title-gradient">APOCALÍPTICA</span> <span id="logo-follower"><small>Srl.</small></span></h1>
       </div>
     </div>
     <!-- End Jumbotron -->
-
     <!-- Main Container -->
-    <div class="container pt-5">
+    <div class="container-fluid py-5">
 
-      <!-- Seccion del Perfil -->
-      <div>
-      [ PERFIL ]
-        
-      </div>
-      <!-- Aqui termina el perfil -->
-      
       <!-- Seccion de Proyectos -->
-      <div>
-      [ PROYECTOS]
-        
+      <div class="container-fluid" id="proyectos">
+        <h2>Proyectos</h2>
+          
       </div>
       <!-- Termina seccion Proyectos -->
 
-      <!-- Seccion de Nuestra Mision -->
+      <!-- Seccion de la Presentación -->
+      <div class="container-fluid" id="presentación">
+        <!-- Seccion de la Aposofía -->
         <div class="row">
           <div class="col-sm">
             <h3 class="mb-4 text-center"><strong><span class="enfasis-logo">ARQ</span>UITECTURA APOCALÍPTICA</strong></h3>
@@ -86,16 +77,22 @@
             <img class="img-fluid img-thumbnail sepia-filter" src="pics/Proyectos/familia-torres/torres-thumb.JPG" alt="Responsive image">
           </div>
         </div>
-      <!-- Termina seccion de Nuestra Mision -->
-
+      <!-- Termina la seccion de la Aposofía -->
+      </div>
+      <!-- Aqui termina la presentación  -->
     </div>
     <!-- Ends Main Container -->
 
     <!-- Seccion de Contacto -->
-    <div class="container my-5 py-5" id="contacto">
+    <div class="container-fluid" id="contacto">
       <div class="row">
-        <div class="col-6">
-          <h3 class="mb-5">Contacto</h3>
+        <div class="col">
+          <h2 class="mb-5 mt-5 text-center">Contacto</h2>
+        </div>
+       
+      </div>
+      <div class="row">
+        <div class="col-md-8  col-xs-5 px-3">
           <h4 class="text-muted mb-5">APOCALÍPTICA Srl.<br>Centro de Diseño y Construccion</h4>
           <p>Arquitectos y diseñadores de edificios</p>
           <p>Contactar: Elias de la Vega<i class="fa fa-phone ml-5"></i>  700 44444</p>
@@ -103,27 +100,15 @@
           <p>Santa Cruz, Bolivia</p>
           <p>Número de colegiado: 4509</p>
         </div>
-        <div class="col">
-          <h3></h3>
-        </div>
-        <div class="col">
-          <form>
-            <div class="form-group">
-              <input type="email" class="form-control" id="email" placeholder="Email">
-            </div>            
-            <div class="form-group">
-              <input type="text" class="form-control" id="name" placeholder="Nombre">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="ciudad" placeholder="Ciudad">
-            </div>            
-            <div class="form-group">
-              <input type="text" class="form-control" id="asunto" placeholder="Asunto">
-            </div>
-            <div>
-              <textarea class="col-12" placeholder="Mensaje" id="text-area-mensaje"></textarea>
-            </div>
-          </form>
+        <!-- Button Div -->
+        <div class="col-md-4 col-sm-3">
+          <div class="row py-5">
+            <!-- empty div used to position the button in the center of the column -->
+          </div>
+          <!-- Callout Button -->
+          <div class="row">
+            <button type="button" class="btn btn-outline-danger btn-lg d-block my-5" data-toggle="modal" data-target="#register" id="callout-btn">Interesado? Contactanos!</button>
+          </div>
         </div>
       </div>
     </div>
@@ -139,15 +124,11 @@
         <div class="col-md">
           <ul class="nav justify-content-end mr-5">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="https://www.facebook.com/ApocalipticaSrl">
                 <i class="social-icons fa fa-facebook fa-lg"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="social-icons fa fa-instagram fa-lg"></i>
-              </a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="https://www.houzz.es/pro/eliasdelavega/elias-de-la-vega-b">
                 <i class=" social-icons fa fa-houzz fa-lg"></i>
@@ -159,6 +140,72 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- FORM Modal -->
+    <div id="register" class="modal fade">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-inverse text-white">
+            <h4 class="modal-title">Llene el Formulario y estaremos en contacto</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Formulario de contacto -->
+            <form>
+              <h5 class="mb-3">Su Información:</h5>
+              <div class="form-group">
+                <label class="sr-only" for="name">Nombre:</label>
+                <input type="text" class="form-control" id="name" placeholder="Nombre">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="mail">Email:</label>
+                <input type="email" class="form-control" id="mail" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="phone">Teléfono:</label>
+                <input type="ephone" class="form-control" id="phone" placeholder="Teléfono">
+              </div>
+
+              <!-- Sección de intereses -->
+              <hr class="my-4">
+              <h5 class="mb-4">Cuáles Son Sus Areas de Interés?</h5>
+
+              <div class="form-group">
+                <div class="form-check">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Construcción</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Remodelación</span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Diseño</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+            <!-- End Registration Form -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-outline-danger">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

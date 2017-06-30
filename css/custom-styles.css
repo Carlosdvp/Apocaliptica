@@ -2,11 +2,22 @@
 Main Page Styles
 ----------------------------------------*/
 
+body {
+  position: relative;
+}
+
 .sepia-filter { 
   -webkit-filter: sepia(80%);
 }
 
 
+/* --------------------------------------
+Navbar
+----------------------------------------*/
+
+.navbar {
+  background-color: rgba(0, 0, 0, .7);
+}
 
 
 /* --------------------------------------
@@ -26,33 +37,17 @@ Jumbotron
 }
 
 .jumbotron {
-  background-color: rgba(36, 43, 34, .85);
-  /* background-image: url('../pics/Proyectos/Bingo-sur/bingo-3.jpg'); */
+ /*  background-color: rgba(36, 43, 34, .85); */
+  background-image: url('../pics/Proyectos/Bingo-sur/bingo-3-bw.JPG');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 h1 {
-  margin-top: 1.5em;
+  margin-top: 1em;
   padding-bottom: 2em;
 }
-
-
-/* --------------------------------------
-Perfil 
-----------------------------------------*/
-
-.enfasis-logo {
-  color: red;
-}
-
-
-/* --------------------------------------
-Navbar
-----------------------------------------*/
-
-.navbar {
-  background-color: rgba(0, 0, 0, .7);
-}
-
 
 
 /* --------------------------------------
@@ -62,22 +57,26 @@ Proyectos
 
 
 
-
-
 /* --------------------------------------
-Servicios
+Presentación
 ----------------------------------------*/
 
-
-
-
+.enfasis-logo {
+  color: red;
+}
 
 
 /* --------------------------------------
 Contacto
 ----------------------------------------*/
 
+#contacto {
+  background-color: rgba(0, 0, 0, .4);
+}
 
+#callout-btn {
+  padding: 0.6em;
+}
 
 
 /* --------------------------------------
@@ -101,6 +100,7 @@ footer a:hover, a:focus, a:active {
   letter-spacing: 0.3em;
 }
 
+
 /* --------------------------------------
 Media Queries
 ----------------------------------------*/
@@ -109,7 +109,7 @@ Media Queries
   #small-on-xs {
     font-size: 1.15em;
   }
-  h1.display-2 {
+  h1.display-3 {
     font-size: 3em;
     margin-top: 2em;
   }
@@ -123,5 +123,11 @@ Media Queries
   }
   h1 {
     padding-bottom: 1em;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #callout-btn {
+  padding: 0.5em;
   }
 }

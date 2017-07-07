@@ -54,7 +54,30 @@ h1 {
 Proyectos
 ----------------------------------------*/
 
+/* Using Masonry JS for the image gallerry: */
+.grid-sizer {
+  width: 33.3%;
+}
 
+.grid-item {
+  width: 33.3%;
+  float: left;
+}
+
+#titulo-proyectos {
+  border-bottom: 3px solid;
+  border-top: 3px solid;
+  padding: .5em;
+}
+
+#proyectos-galeria {
+
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
 
 
 /* --------------------------------------
@@ -78,6 +101,10 @@ Contacto
   padding: 0.6em;
 }
 
+#formulario-contacto {}
+
+#submit-button {}
+
 
 /* --------------------------------------
 Footer
@@ -99,6 +126,22 @@ footer a:hover, a:focus, a:active {
   font-weight: bold;
   letter-spacing: 0.3em;
 }
+
+
+/* --------------------------------------
+Paginas de los Proyectos
+----------------------------------------*/
+
+body.proyectos {
+  background-color: rgba(0, 0, 0, .3);
+}
+
+footer.proyectos #footer-logo {
+  color: rgba(0, 0, 0, .6);
+}
+
+
+
 
 
 /* --------------------------------------
@@ -129,5 +172,27 @@ Media Queries
 @media only screen and (max-width: 780px) {
   #callout-btn {
   padding: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-sizer {
+    width: 50%;
+  }
+
+  .grid-item {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 544px) {
+  .grid-sizer {
+    width: 100%;
+  }
+
+  .grid-item {
+    width: 100%;
+    float: left;
   }
 }

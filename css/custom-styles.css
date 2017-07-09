@@ -119,6 +119,9 @@ Contacto
 
 #submit-button {}
 
+#contact-phone-numbers {
+
+}
 
 /* --------------------------------------
 Footer
@@ -169,6 +172,9 @@ Media Queries
   h1.display-3 {
     font-size: 3em;
     margin-top: 2em;
+  }
+  #contact-phone-numbers div p i {
+    margin-left: 0;
   }
 }
 

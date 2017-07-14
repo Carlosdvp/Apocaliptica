@@ -13,9 +13,10 @@ $('.navbar-nav>li>a').on('click', function(){
 });
 
 
-// I need to clear the modal form input fields when it is closed ---------------
+// I need to clear the modal form input fields when it is closed, that is when either of the btn's are clicked on or the modal is closed       ---------------
 
 
 
 // to grab the navbar-brand text inside the <a> tag and align it to the baseline of the logo <img>
-const brandLogo = document.getElementById('small-on-xs').textContent;
+// const brandLogo = document.getElementById('small-on-xs').textContent; //not doing anything with this yet
+

@@ -48,7 +48,7 @@ Jumbotron
 ----------------------------------------*/
 
 #titulo-principal {
-  /* font-weight: normal; */
+  text-shadow: 4px 4px rgba(0, 0, 0, 1), 5px 5px firebrick, 0 0 2em black;
 }
 
 #title-gradient {
@@ -60,11 +60,11 @@ Jumbotron
 }
 
 .jumbotron {
- /*  background-color: rgba(36, 43, 34, .85); */
-  background-image: url('../pics/Proyectos/Bingo-sur/bingo-3-bw.JPG');
+  background-image: url('../pics/background-main.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 9rem 1rem;
 }
 
 h1 {
@@ -87,15 +87,13 @@ Proyectos
   float: left;
 }
 
-#titulo-proyectos {
+.titulo-proyectos {
   border-bottom: 3px solid;
   border-top: 3px solid;
   padding: .5em;
 }
 
-#proyectos-galeria {
-
-}
+#proyectos-galeria {}
 
 .no-gutters {
   margin-right: 0;
@@ -120,6 +118,7 @@ Presentación
   border-top: 3px solid firebrick;
   border-bottom: 3px solid firebrick;
 }
+
 
 /* --------------------------------------
 Contacto
@@ -187,9 +186,6 @@ footer.proyectos #footer-logo {
 }
 
 
-
-
-
 /* --------------------------------------
 Media Queries
 ----------------------------------------*/
@@ -205,16 +201,27 @@ Media Queries
   #contacto p {
     font-size: 1.5em;
   }
-
   #contacto h5, h4 {
     font-size: 1.8em;
+  }
+  #titulo-principal {
+    text-shadow: 2px 2px rgba(0, 0, 0, 1), 3px 3px firebrick, 0 0 1em black;
+  }
+}
+
+@media only screen and (max-width: 544px) {
+  .grid-sizer {
+    width: 100%;
+  }
+
+  .grid-item {
+    width: 100%;
+
   }
 }
 
 @media only screen and (max-width: 576px) {
-  #social-icons-xs {
-    /* margin-right: auto; */ 
-  }
+  #social-icons-xs {/* margin-right: auto; */ }
 }
 
 
@@ -228,30 +235,27 @@ Media Queries
   }
 }
 
+@media only screen and (min-width: 544px) and (max-width: 768px) {
+  .grid-sizer {
+    width: 80%;
+  }
+  .grid-item {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+
 @media only screen and (max-width: 780px) {
   #callout-btn {
   padding: 0.5em;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 960px) {
   .grid-sizer {
     width: 50%;
   }
-
   .grid-item {
     width: 50%;
-    float: left;
-  }
-}
-
-@media only screen and (max-width: 544px) {
-  .grid-sizer {
-    width: 100%;
-  }
-
-  .grid-item {
-    width: 100%;
-    float: left;
   }
 }

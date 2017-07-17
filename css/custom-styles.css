@@ -100,6 +100,26 @@ Proyectos
   margin-left: 0;
 }
 
+/* Using Slick Carousel plugin for the Gallery on Project 2 Brisas */
+.slick-next:before,
+.slick-prev:before {
+  color: firebrick;
+}
+
+.slick-dots li button:before {
+  color: darkred;
+  font-size: 18px;
+}
+
+.slick-dots li.slick-active button:before{
+  color: firebrick;
+}
+
+.slickness img {
+  height: 50vh;
+}
+
+
 
 /* --------------------------------------
 Presentación
@@ -150,6 +170,7 @@ Contacto
 #submit-button {}
 
 #contact-phone-numbers {}
+
 
 /* --------------------------------------
 Footer
@@ -213,10 +234,11 @@ Media Queries
   .grid-sizer {
     width: 100%;
   }
-
   .grid-item {
     width: 100%;
-
+  }
+  .slickness img {
+    height: 40vh;
   }
 }
 

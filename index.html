@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Favicon and Custom CSS -->
+    <!-- Favicon and My CSS -->
     <link rel="icon" href="pics/favicon.png">
     <link rel="stylesheet" href="css/custom-styles.css">
   </head>
@@ -68,22 +68,33 @@
       <!-- Masonry Grid Section for the Gallery -->
         <div class="grid no-gutters" id="proyectos-galeria">
           <div class="grid-sizer"></div>
+
           <!-- Proyecto 1 Casa sur -->
-          <div class="grid-item">
+          <div class="grid-item" data-toggle="tooltip" title="Vivienda Unifamiliar Barrio Urucú" id="casa1">
+            <!-- TOOLTIP appears close to the bottom of the picture -->
             <a href="Casa-Sur.html" target="_blank">
-              <img src="pics/Proyectos/1-Casa-Sur/sur-7.jpg" class="img-fluid" alt="casa sur foto 7">
-            </a>
-          </div>
-          <!-- Proyecto 2  -->
-          <div class="grid-item">
-            <a href="proyectos.html" target="_blank">
-              <img src="pics/Proyectos/familia-torres/torres-1.JPG" class="img-fluid" alt="Imagen de una casa">
+              <img src="pics/Proyectos/1-Casa-Sur/sur-7.jpg" class="img-fluid" alt="casa sur foto 7" >
             </a>
           </div>
 
-          <div class="grid-item hidden-xs-down">
-            <img src="pics/Proyectos/Schuab/shuab-3.JPG" class="img-fluid" alt="Imagen de una casa">
+          <!-- Proyecto 2 Condo Las Brisas -->
+          <div class="grid-item">
+            <!-- TOOLTIP appears inside of the picture close to the center -->
+            <a href="brisas.html" target="_blank" data-toggle="tooltip" title="Vivienda Unifamiliar Condominio Las Brisas" id="casa2">
+              <img src="pics/Proyectos/2-Condo-las-brisas/brisa-3.jpg" class="img-fluid" alt="Casa exterior noche">
+            </a>
           </div>
+
+          <!-- Proyecto 3 Casa Clavijo -->
+          <div class="grid-item">
+            <!-- TOOLTIP appears inside of the picture close to the center -->
+            <a href="Casa-clavijo.html" target="_blank" data-toggle="tooltip" title="Vivienda Unifamiliar Clavijo Condominio Las Brisas" id="casa3">
+              <img src="pics/Proyectos/3-Casa-clavijo/clavijo-5.jpg" class="img-fluid" alt="Exterior de la casa">
+            </a>
+          </div>
+
+
+          <!-- Proyecto 4 -->
           <div class="grid-item hidden-xs-down">
             <img src="pics/Proyectos/familia-torres/torres-2.JPG" class="img-fluid" alt="Imagen de una casa">
           </div>
@@ -317,11 +328,14 @@
   <!-- End modal -->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Slick Carousel JS -->
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
     <!-- Masonry.js -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!-- My JS -->
     <script src="js/apocaliptica.js"></script>
   </body>
 </html>

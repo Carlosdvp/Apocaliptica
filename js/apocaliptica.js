@@ -1,21 +1,37 @@
 
-//masonry js initializer
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true,
-  horizontalOrder: true
-});
-
 // to collapse the navbar when I click on one of the links
 $('.navbar-nav>li>a').on('click', function(){
   $('.navbar-collapse').collapse('hide');
 });
 
-//slick plubin initializer and options
+//slick plugin initializer and options for the home page
 $(`.slickness`).slick({
   autoplay: true,
   slidesToShow: 2,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  infinite: true,
+  swipeToSlide: true,
+  variableWidth: true,
+  // responsive: [
+  //   {
+  //     breakpoint: 740,
+  //     settings: {
+  //       slidesToShow: 1,
+  //       infinite: true,
+  //       dots: true,
+  //       arrows: false,
+  //       variableWidth: true
+  //     }
+  //   }
+  // ]
+});
+
+// Slick plugin for the project pages, one row gallery slider
+$(`.slickness-proyectos`).slick({
+  autoplay: true,
+  slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
   arrows: false,
@@ -28,13 +44,14 @@ $(`.slickness`).slick({
         slidesToShow: 1,
         infinite: true,
         dots: true,
-        arrows: false
+        arrows: false,
+        variableWidth: true
       }
     }
   ]
 });
 
-// to initialize Tooltips for each of the images on the Main Page picture Gallery
+// to initialize Bootstrap Tooltips for each of the images on the Main Page picture Gallery
 $(function () {
   $('[data-toggle="tooltip"]').tooltip({
     container: `body`,
@@ -44,12 +61,9 @@ $(function () {
     animation: false
   })
 })
-// there has to be a way to customize the color of the text inside the tooltip. I think that this can be done either with CSS, or by using the HTML option for the tooltip combined with the text-danger Class for <p> elements.
 
-// Lightbox options
-lightbox.option({
-  albumLabel:  "Imágen %1 de %2"
-})
+
+// there has to be a way to customize the color of the text inside the tooltip. I think that this can be done either with CSS, or by using the HTML option for the tooltip combined with the text-danger Class for <p> elements.
 
 
 

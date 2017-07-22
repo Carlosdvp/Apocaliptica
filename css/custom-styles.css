@@ -77,30 +77,21 @@ h1 {
 Proyectos
 ----------------------------------------*/
 
-/* Using Masonry JS for the image gallerry: */
-.grid-sizer {
-  width: 33.3%;
-}
-
-.grid-item {
-  width: 33.3%;
-  float: left;
-}
-
 .titulo-proyectos {
-  border-bottom: 3px solid;
-  border-top: 3px solid;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
   padding: .5em;
+  letter-spacing: 0.2em;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
 
-#proyectos-galeria {}
+span.card {
+  border: 2px solid rgba(178, 34, 34, .7);
+}
 
 .no-gutters {
-  margin-right: 0;
-  margin-left: 0;
 }
 
-/* Using Slick Carousel plugin for the Gallery on Project 2 Brisas */
 .slick-next:before,
 .slick-prev:before {
   color: firebrick;
@@ -117,9 +108,13 @@ Proyectos
 
 .slickness img {
   height: 50vh;
+  margin: auto;
 }
 
-
+.slickness-proyectos img {
+  height: 60vh;
+  margin: auto;
+}
 
 /* --------------------------------------
 Presentación
@@ -139,7 +134,13 @@ Presentación
   border-bottom: 3px solid firebrick;
 }
 
+.slogan-main {
+  
+}
 
+.presentacion-slogan {
+  font-family: 'Pathway Gothic One', sans-serif;
+}
 /* --------------------------------------
 Contacto
 ----------------------------------------*/
@@ -163,6 +164,19 @@ Contacto
 
 #callout-btn {
   padding: 0.6em;
+}
+
+.phone a {
+  color: rgba(96, 3, 0, .7);
+  text-decoration: none;
+}
+
+.phone a:active {
+  color: rgba(64, 10, 14, .8);
+}
+
+.phone a:hover {
+  color: rgba(64, 10, 14, .8);
 }
 
 #formulario-contacto {}
@@ -230,22 +244,16 @@ Media Queries
   }
 }
 
-@media only screen and (max-width: 544px) {
-  .grid-sizer {
-    width: 100%;
-  }
-  .grid-item {
-    width: 100%;
-  }
+@media only screen and (max-width: 576px) {
+  #social-icons-xs {/* margin: auto;  */}
+
   .slickness img {
+    height: 30vh;
+  }
+  .slickness-proyectos img {
     height: 40vh;
   }
 }
-
-@media only screen and (max-width: 576px) {
-  #social-icons-xs {/* margin-right: auto; */ }
-}
-
 
 @media only screen and (min-width: 500px) and (max-width: 750px) {
   h1.display-2 {
@@ -257,16 +265,6 @@ Media Queries
   }
 }
 
-@media only screen and (min-width: 544px) and (max-width: 768px) {
-  .grid-sizer {
-    width: 80%;
-  }
-  .grid-item {
-    width: 80%;
-    margin: 0 10%;
-  }
-}
-
 @media only screen and (max-width: 780px) {
   #callout-btn {
   padding: 0.5em;
@@ -274,10 +272,18 @@ Media Queries
 }
 
 @media only screen and (min-width: 768px) and (max-width: 960px) {
-  .grid-sizer {
-    width: 50%;
+
+} 
+
+/* For large and x-tra large screens */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .slickness-proyectos img {
+    height: 70vh;
+    margin: auto;
   }
-  .grid-item {
-    width: 50%;
+  .slickness img {
+    height: 60vh;
+    margin: auto;
   }
+
 }

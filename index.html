@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slick Carousel plgin CSS -->
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
     <!-- Favicon and My CSS -->
     <link rel="icon" href="pics/favicon.png">
     <link rel="stylesheet" href="css/custom-styles.css">
@@ -38,7 +41,7 @@
             <a class="nav-link" href="#inicio">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
+            <a class="nav-link" href="#proyectos-lead">Proyectos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#presentación">Presentación</a>
@@ -58,19 +61,33 @@
       </div>
     </div>
   <!-- End Jumbotron -->
+  <!-- Slogan Section -->
+  <blockquote class="col-sm slogan slogan-main pb-3 text-center">
+    <p class="lead font-weight-bold m-0 presentacion-slogan">
+      El objetivo del diseñador, no es darle al cliente lo que piensa que quiere,
+    </p>
+    <p id="proyectos-lead" class="lead font-weight-bold mb-2 presentacion-slogan">
+      sino, lo que nunca soño que queria.
+    </p>
+  </blockquote>
+  <!-- End of Slogan blockquote -->
 
   <!-- Main Container -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid pb-5">
 
     <!-- Seccion de Proyectos -->
-      <div class="container-fluid pt-5" id="proyectos">
-        <h2 class="text-center my-5 text-muted titulo-proyectos">Proyectos</h2>
-      <!-- Masonry Grid Section for the Gallery -->
-        <div class="grid no-gutters" id="proyectos-galeria">
-          <div class="grid-sizer"></div>
+      <div class="container-fluid pt-0" id="proyectos">
+        <h2 class="text-center mb-3 text-muted titulo-proyectos">Proyectos</h2>
+        <span class="card mb-3">
+          <p class="lead text-center pt-3 text-muted">Te gusta alguna de las casas? Haz clic en su foto para ver su galería completa!</p>
+        </span>
+
+      <!-- Slick Carousel Section for the Gallery 3 divs for 3 rows-->
+        <!-- Div One Top Row 7 pictures-->
+        <div class="slickness text-center">
 
           <!-- Proyecto 1 Casa sur -->
-          <div class="grid-item" data-toggle="tooltip" title="Vivienda Unifamiliar Barrio Urucú" id="casa1">
+          <div data-toggle="tooltip" title="Vivienda Unifamiliar Barrio Urucú" id="casa1">
             <!-- TOOLTIP appears close to the bottom of the picture -->
             <a href="Casa-Sur.html" target="_blank">
               <img src="pics/Proyectos/1-Casa-Sur/sur-7.jpg" class="img-fluid" alt="casa sur foto 7" >
@@ -78,7 +95,7 @@
           </div>
 
           <!-- Proyecto 2 Condo Las Brisas -->
-          <div class="grid-item">
+          <div>
             <!-- TOOLTIP appears inside of the picture close to the center -->
             <a href="brisas.html" target="_blank" data-toggle="tooltip" title="Vivienda Unifamiliar Condominio Las Brisas" id="casa2">
               <img src="pics/Proyectos/2-Condo-las-brisas/brisa-3.jpg" class="img-fluid" alt="Casa exterior noche">
@@ -86,36 +103,90 @@
           </div>
 
           <!-- Proyecto 3 Casa Clavijo -->
-          <div class="grid-item">
+          <div>
             <!-- TOOLTIP appears inside of the picture close to the center -->
             <a href="Casa-clavijo.html" target="_blank" data-toggle="tooltip" title="Vivienda Unifamiliar Clavijo Condominio Las Brisas" id="casa3">
               <img src="pics/Proyectos/3-Casa-clavijo/clavijo-5.jpg" class="img-fluid" alt="Exterior de la casa">
-            </a>
+            </a>          
           </div>
-
-
-          <!-- Proyecto 4 -->
-          <div class="grid-item hidden-xs-down">
-            <img src="pics/Proyectos/familia-torres/torres-2.JPG" class="img-fluid" alt="Imagen de una casa">
-          </div>
-          <div class="grid-item hidden-sm-down">
+          <!-- Proyecto 4  -->
+          <div>
             <img src="pics/Proyectos/Schuab/shuab-8-bw.JPG" class="img-fluid" alt="Imagen de una casa">
           </div>
-          <div class="grid-item">
+          <!-- Proyecto 5 -->
+          <div>
             <img src="pics/Proyectos/familia-torres/torres-3.JPG" class="img-fluid" alt="Imagen de una casa">
           </div>
-          <div class="grid-item">
+          <!-- Proyecto 6 -->
+          <div>
+            <img src="pics/Proyectos/2-Condo-las-brisas/brisa-4.jpg" class="img-fluid" alt="Imagen de una casa">
+          </div>
+          <!-- Proyecto 7 -->
+          <div>
             <img src="pics/Proyectos/1-Casa-Sur/sur-1.jpg" class="img-fluid" alt="Imagen de una casa">
           </div>
-          <div class="grid-item">
+        </div>
+        <!-- Div Two Second Row 7 Pictures -->
+        <div class="slickness text-center">
+          <!-- Proyecto 8 -->
+          <div>
+            <img src="pics/Proyectos/2-Condo-las-brisas/brisa-6.jpg" class="img-fluid" alt="Imagen de una casa">
+          </div>
+          <!-- Proyecto 9 -->
+          <div>
             <img src="pics/Proyectos/familia-torres/torres-thumb.JPG" class="img-fluid" alt="Imagen de una casa">
           </div>
-          <div class="grid-item hidden-sm-down">
+          <!-- Proyecto 10 -->
+          <div>
+            <img src="pics/Proyectos/Schuab/shuab-7.JPG" class="img-fluid" alt="Imagen de una casa">
+          </div>
+          <!-- Proyecto 11 -->
+          <div>
+            <img src="pics/Proyectos/2-Condo-las-brisas/brisa-4.jpg" class="img-fluid" alt="Imagen de una casa">
+          </div>
+          <!-- Proyecto 12 -->
+          <div>
+            <img src="pics/Proyectos/1-Casa-Sur/sur-1.jpg" class="img-fluid" alt="Imagen de una casa">
+          </div>
+          <!-- Proyecto 13 -->
+          <div>
+            <img src="pics/Proyectos/2-Condo-las-brisas/brisa-6.jpg" class="img-fluid" alt="Imagen de una casa">
+          </div>
+          <!-- Proyecto 14 -->
+          <div>
+            <img src="pics/Proyectos/familia-torres/torres-thumb.JPG" class="img-fluid" alt="Imagen de una casa">
+          </div>
+        </div>
+        <!-- Div 3 Third Row 6 Pictures -->
+        <div class="slickness text-center">
+          <!-- Proyecto 15 -->
+          <div>
+            <img src="pics/Proyectos/Schuab/shuab-7.JPG" class="img-fluid" alt="Imagen de una casa">
+          </div>
+          <!-- Proyecto 16 -->
+          <div>
+            <img src="pics/Proyectos/2-Condo-las-brisas/brisa-4.jpg" class="img-fluid" alt="Imagen de una casa">
+          </div>
+          <!-- Proyecto 17 -->
+          <div>
+            <img src="pics/Proyectos/1-Casa-Sur/sur-1.jpg" class="img-fluid" alt="Imagen de una casa">
+          </div>
+          <!-- Proyecto 18 -->
+          <div>
+            <img src="pics/Proyectos/2-Condo-las-brisas/brisa-6.jpg" class="img-fluid" alt="Imagen de una casa">
+          </div>
+          <!-- Proyecto 19 -->
+          <div>
+            <img src="pics/Proyectos/familia-torres/torres-thumb.JPG" class="img-fluid" alt="Imagen de una casa">
+          </div>
+          <!-- Proyecto 20 -->
+          <div>
             <img src="pics/Proyectos/Schuab/shuab-7.JPG" class="img-fluid" alt="Imagen de una casa">
           </div>
 
         </div>
-      <!-- Ends Masonry Grid Gallery -->
+      <!-- Ends Slick Carousel Gallery -->
+
       </div>
     <!-- Termina seccion Proyectos -->
 
@@ -126,7 +197,7 @@
           <h5 class="mb-5 text-center">Diseño y Construcción.</h5>
         </div>
         <div class="row my-5 pb-5">
-          <div class="col-sm slogan">
+          <div class="col-sm slogan presentacion-slogan">
             <p class="lead font-weight-bold">El objetivo del diseñador, no es darle al cliente</p>
             <p class="lead font-weight-bold">lo que piensa que quiere,</p>
             <p class="lead text-center font-weight-bold">sino, lo que nunca</p>
@@ -209,14 +280,20 @@
             <br>Edif. Estudiante Piso 1 Oficina 3.4
             <br>Santa Cruz, Bolivia
           </p>
-          <p>
-            <i class="fa fa-phone"></i> 770 80724
+          <p class="phone">
+            <a href="tel:77080724">
+              <i class="fa fa-phone"></i> 770 80724
+            </a>
           </p>
-          <p>
-            <i class="fa fa-phone"></i> 755 69075
+          <p class="phone">
+            <a href="tel:75569075">
+              <i class="fa fa-phone"></i> 755 69075
+            </a>
           </p>
-          <p>
-            <i class="fa fa-phone"></i> 700 44444
+          <p class="phone">
+            <a href="tel:70044444">
+              <i class="fa fa-phone"></i> 700 44444
+            </a>
           </p>
         </div>
       </div>
@@ -333,8 +410,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!-- Slick Carousel JS -->
     <script type="text/javascript" src="js/slick/slick.min.js"></script>
-    <!-- Masonry.js -->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <!-- My JS -->
     <script src="js/apocaliptica.js"></script>
   </body>

@@ -58,11 +58,12 @@
     <div class="jumbotron jumbotron-fluid text-white">
       <div class="container" id="inicio">
         <h1 class="mb-5 text-center display-3" id="titulo-principal"><span class="enfasis-logo">ARQ</span>UITECTURA <span id="title-gradient">APOCALÍPTICA</span> <span id="logo-follower"><small>Srl.</small></span></h1>
+        <h4 class="text-center" id="subtitulo-principal">Centro de Diseño y Construcción</h4>
       </div>
     </div>
   <!-- End Jumbotron -->
   <!-- Slogan Section -->
-  <blockquote class="col-sm slogan slogan-main pb-3 text-center">
+  <blockquote id="slogan-proyectos" class="col-sm slogan slogan-main pb-3 text-center">
     <p class="lead font-weight-bold m-0 presentacion-slogan">
       El objetivo del diseñador, no es darle al cliente lo que piensa que quiere,
     </p>
@@ -79,7 +80,7 @@
       <div class="container-fluid pt-0" id="proyectos">
         <h2 class="text-center mb-3 text-muted titulo-proyectos">Proyectos</h2>
         <span class="card mb-3">
-          <p class="lead text-center pt-3 text-muted">Te gusta alguna de las casas? Haz clic en su foto para ver su galería completa!</p>
+          <p class="lead text-center pt-3 text-muted" id="proyectos-call-to-action">Te gusta alguna de las casas? Haz clic en su foto para ver su galería completa!</p>
         </span>
 
       <!-- Slick Carousel Section for the Gallery 3 divs for 3 rows-->
@@ -92,6 +93,7 @@
             <a href="Casa-Sur.html" target="_blank">
               <img src="pics/Proyectos/1-Casa-Sur/sur-7.jpg" class="img-fluid" alt="casa sur foto 7" >
             </a>
+            <p class="proyecto-label">Vivienda Unifamiliar Barrio Urucú</p>
           </div>
 
           <!-- Proyecto 2 Condo Las Brisas -->
@@ -100,14 +102,16 @@
             <a href="brisas.html" target="_blank" data-toggle="tooltip" title="Vivienda Unifamiliar Condominio Las Brisas" id="casa2">
               <img src="pics/Proyectos/2-Condo-las-brisas/brisa-3.jpg" class="img-fluid" alt="Casa exterior noche">
             </a>
+            <p class="proyecto-label">Condominio Las Brisas</p>
           </div>
 
           <!-- Proyecto 3 Casa Clavijo -->
           <div>
             <!-- TOOLTIP appears inside of the picture close to the center -->
-            <a href="Casa-clavijo.html" target="_blank" data-toggle="tooltip" title="Vivienda Unifamiliar Clavijo Condominio Las Brisas" id="casa3">
+            <a href="Casa-clavijo.html" target="_blank" data-toggle="tooltip" title="Casa Clavijo" id="casa3">
               <img src="pics/Proyectos/3-Casa-clavijo/clavijo-5.jpg" class="img-fluid" alt="Exterior de la casa">
-            </a>          
+            </a>
+            <p class="proyecto-label">Casa Clavijo</p>          
           </div>
           <!-- Proyecto 4  -->
           <div>
@@ -127,7 +131,7 @@
           </div>
         </div>
         <!-- Div Two Second Row 7 Pictures -->
-        <div class="slickness text-center">
+        <div class="slickness-2 text-center pt-3">
           <!-- Proyecto 8 -->
           <div>
             <img src="pics/Proyectos/2-Condo-las-brisas/brisa-6.jpg" class="img-fluid" alt="Imagen de una casa">
@@ -158,7 +162,7 @@
           </div>
         </div>
         <!-- Div 3 Third Row 6 Pictures -->
-        <div class="slickness text-center">
+        <div class="slickness-3 text-center pt-3">
           <!-- Proyecto 15 -->
           <div>
             <img src="pics/Proyectos/Schuab/shuab-7.JPG" class="img-fluid" alt="Imagen de una casa">
@@ -186,7 +190,6 @@
 
         </div>
       <!-- Ends Slick Carousel Gallery -->
-
       </div>
     <!-- Termina seccion Proyectos -->
 
@@ -194,25 +197,18 @@
       <div class="container-fluid pt-4" id="presentación">
         <div class="col-xs pt-5 mt-4">
           <h3 class="mb-4 text-center"><strong><span class="enfasis-logo">ARQ</span>UITECTURA APOCALÍPTICA</strong></h3>
-          <h5 class="mb-5 text-center">Diseño y Construcción.</h5>
+          <h5 class="mb-5 text-center">Centro de Diseño y Construcción.</h5>
         </div>
-        <div class="row my-5 pb-5">
-          <div class="col-sm slogan presentacion-slogan">
-            <p class="lead font-weight-bold">El objetivo del diseñador, no es darle al cliente</p>
-            <p class="lead font-weight-bold">lo que piensa que quiere,</p>
-            <p class="lead text-center font-weight-bold">sino, lo que nunca</p>
-            <p class="lead text-right font-weight-bold">soño que queria.</p>
-          </div>
-          <div class="col-md hidden-xs-down">
+        
+<!--           <div class="col-md-8">
             <img class="img-fluid img-thumbnail sepia-filter" src="pics/Proyectos/Schuab/shuab-7.JPG" alt="Responsive image">
-          </div>
-        </div>
+          </div> -->
 
       <!-- Seccion de la Aposofía -->
         <div class="row my-5 py-3">
-          <div class="col-md hidden-xs-down">
+          <div class="col-md">
             <img class="img-fluid img-thumbnail sepia-filter" src="pics/Proyectos/Schuab/shuab-6.JPG" alt="Responsive image">
-            <img class="img-fluid img-thumbnail sepia-filter" src="pics/Proyectos/familia-torres/torres-thumb.JPG" alt="Responsive image">
+            <img class="img-fluid img-thumbnail sepia-filter  hidden-xs-down" src="pics/Proyectos/familia-torres/torres-thumb.JPG" alt="Responsive image">
           </div>
           <div class="col-sm">
             <h2 class="mb-4 text-muted text-center aposofia">Aposofía</h2>
@@ -223,7 +219,6 @@
           </div>
         </div>
       <!-- Termina la seccion de la Aposofía -->
-
         <div class="row my-5 py-5">
           <div class="col-sm">
             <h3 class="mb-4 text-center"><strong><span class="enfasis-logo">ARQ</span>UITECTURA APOCALÍPTICA</strong></h3>
@@ -234,7 +229,6 @@
         </div>
       </div>
     <!-- Aqui termina la presentación  -->
-
     </div>
   <!-- Ends Main Container -->
 

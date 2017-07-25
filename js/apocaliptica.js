@@ -4,7 +4,8 @@ $('.navbar-nav>li>a').on('click', function(){
   $('.navbar-collapse').collapse('hide');
 });
 
-//slick plugin initializer and options for the home page
+//slick plugin initializer and options for the home page, 
+// For the first Row slideshow on the homepage
 $(`.slickness`).slick({
   autoplay: true,
   slidesToShow: 2,
@@ -14,6 +15,7 @@ $(`.slickness`).slick({
   infinite: true,
   swipeToSlide: true,
   variableWidth: true,
+  centerMode: true
   // responsive: [
   //   {
   //     breakpoint: 740,
@@ -27,8 +29,34 @@ $(`.slickness`).slick({
   //   }
   // ]
 });
+// For the Second Row slideshow on the homepage
+$(`.slickness-2`).slick({
+  autoplay: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  speed: 280,
+  dots: true,
+  arrows: false,
+  infinite: true,
+  swipeToSlide: true,
+  variableWidth: true,
+  centerMode: true
+});
+// For the Third Row slideshow on the Homepage
+$(`.slickness-3`).slick({
+  autoplay: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  speed: 290,
+  dots: true,
+  arrows: false,
+  infinite: true,
+  swipeToSlide: true,
+  variableWidth: true,
+  centerMode: true
+});
 
-// Slick plugin for the project pages, one row gallery slider
+// Slick plugin for the project pages, one row gallery slideshow
 $(`.slickness-proyectos`).slick({
   autoplay: true,
   slidesToShow: 1,

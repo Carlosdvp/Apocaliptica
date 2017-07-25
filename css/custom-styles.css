@@ -48,7 +48,12 @@ Jumbotron
 ----------------------------------------*/
 
 #titulo-principal {
-  text-shadow: 4px 4px rgba(0, 0, 0, 1), 5px 5px firebrick, 0 0 2em black;
+  text-shadow: 4px 4px rgba(0, 0, 0, 1), 5px 5px rgba(56, 18, 3, 1), 0 0 2em black;
+}
+
+#subtitulo-principal {
+  margin-top: -2em;
+  text-shadow: 3px 3px rgba(0, 0, 0, 1), 4px 4px rgba(56, 18, 3, 1), 0 0 2em black;
 }
 
 #title-gradient {
@@ -77,6 +82,8 @@ h1 {
 Proyectos
 ----------------------------------------*/
 
+#slogan-proyectos {}
+
 .titulo-proyectos {
   border-bottom: 3px solid black;
   border-top: 3px solid black;
@@ -87,9 +94,6 @@ Proyectos
 
 span.card {
   border: 2px solid rgba(178, 34, 34, .7);
-}
-
-.no-gutters {
 }
 
 .slick-next:before,
@@ -111,9 +115,24 @@ span.card {
   margin: auto;
 }
 
+.slickness-2 img {
+  height: 50vh;
+  margin: auto;
+}
+
+.slickness-3 img {
+  height: 50vh;
+  margin: auto;
+}
+
 .slickness-proyectos img {
   height: 60vh;
   margin: auto;
+}
+
+.proyecto-label {
+  padding: 0;
+  margin: 0;
 }
 
 /* --------------------------------------
@@ -240,14 +259,33 @@ Media Queries
     font-size: 1.8em;
   }
   #titulo-principal {
-    text-shadow: 2px 2px rgba(0, 0, 0, 1), 3px 3px firebrick, 0 0 1em black;
+    text-shadow: 2px 2px rgba(0, 0, 0, 1), 3px 3px rgba(56, 18, 3, 1), 0 0 1em black;
+  }
+  #subtitulo-principal {
+  margin-top: -2em;
+  text-shadow: 2px 2px rgba(0, 0, 0, 1), 3px 3px rgba(56, 18, 3, 1), 0 0 2em black;
+  font-size: 1.6em;
   }
 }
 
 @media only screen and (max-width: 576px) {
   #social-icons-xs {/* margin: auto;  */}
 
+  #slogan-proyectos {
+    font-size: .8em;
+  }
+
+  #proyectos-call-to-action {
+    font-size: 1em;
+  }
+
   .slickness img {
+    height: 30vh;
+  }
+  .slickness-2 img {
+    height: 30vh;
+  }
+  .slickness-3 img {
     height: 30vh;
   }
   .slickness-proyectos img {
@@ -282,6 +320,14 @@ Media Queries
     margin: auto;
   }
   .slickness img {
+    height: 60vh;
+    margin: auto;
+  }
+  .slickness-2 img {
+    height: 60vh;
+    margin: auto;
+  }
+  .slickness-3 img {
     height: 60vh;
     margin: auto;
   }

@@ -79,10 +79,22 @@ h1 {
 
 
 /* --------------------------------------
-Proyectos
+Slogan Blockquote
 ----------------------------------------*/
 
-#slogan-proyectos {}
+.slogan-main {
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.slogan p {
+  font-size: 2em;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+
+/* --------------------------------------
+Proyectos
+----------------------------------------*/
 
 .titulo-proyectos {
   border-bottom: 3px solid black;
@@ -130,10 +142,16 @@ span.card {
   margin: auto;
 }
 
+.slickness-proyectos-multiSlides img {
+  height: 60vh;
+  margin: auto;
+}
+
 .proyecto-label {
   padding: 0;
   margin: 0;
 }
+
 
 /* --------------------------------------
 Presentación
@@ -143,23 +161,28 @@ Presentación
   color: red;
 }
 
-.slogan p {
-  font-size: 2em;
-  text-shadow: 4px 4px 4px #aaa;
-}
-
 .aposofia {
   border-top: 3px solid firebrick;
   border-bottom: 3px solid firebrick;
 }
 
-.slogan-main {
-  
+#Aristoteles-quote {
+  border: 3px solid rgba(0, 0, 0, .4);
+  padding: 1em;
+  background-image: url('../pics/Proyectos/homepage/boceto1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: sepia(.7);
 }
 
-.presentacion-slogan {
-  font-family: 'Pathway Gothic One', sans-serif;
+#Aristoteles-quote p {
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px rgba(200, 200, 200, 1);
 }
+
+
 /* --------------------------------------
 Contacto
 ----------------------------------------*/
@@ -198,11 +221,33 @@ Contacto
   color: rgba(64, 10, 14, .8);
 }
 
+.email a {
+  color: rgba(96, 3, 0, .7);
+  text-decoration: none;  
+}
+
+.email a:active {
+  color: rgba(64, 10, 14, .8);
+}
+
+.email a:hover {
+  color: ghostwhite;
+}
+
 #formulario-contacto {}
 
 #submit-button {}
 
 #contact-phone-numbers {}
+
+#contact-information {}
+
+.email {}
+
+#location-map {
+  width: 100%;
+  height: 100%;
+}
 
 
 /* --------------------------------------
@@ -262,9 +307,9 @@ Media Queries
     text-shadow: 2px 2px rgba(0, 0, 0, 1), 3px 3px rgba(56, 18, 3, 1), 0 0 1em black;
   }
   #subtitulo-principal {
-  margin-top: -2em;
-  text-shadow: 2px 2px rgba(0, 0, 0, 1), 3px 3px rgba(56, 18, 3, 1), 0 0 2em black;
-  font-size: 1.6em;
+    margin-top: -2em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 1), 3px 3px rgba(56, 18, 3, 1), 0 0 2em black;
+    font-size: 1.6em;
   }
 }
 
@@ -291,9 +336,19 @@ Media Queries
   .slickness-proyectos img {
     height: 40vh;
   }
+  .slickness-proyectos-multiSlides img {
+    height: 40vh;
+  }
+  #Aristoteles-quote {
+    background-image: none;
+  }
+  #map-container {
+    height: 50vh;
+    margin-bottom: 1em;
+  }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 750px) {
+@media only screen and (min-width: 500px) and (max-width: 780px) {
   h1.display-2 {
     font-size: 4em;
     margin-top: 1.75em;
@@ -301,11 +356,19 @@ Media Queries
   h1 {
     padding-bottom: 1em;
   }
+  #location-map {
+    width: 80%;
+    height: 100%;
+  }
+  #map-container {
+    height: 50vh;
+    margin-bottom: 1.5em;
+  }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 768px) {
   #callout-btn {
-  padding: 0.5em;
+    padding: 0.5em;
   }
 }
 
@@ -316,6 +379,10 @@ Media Queries
 /* For large and x-tra large screens */
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .slickness-proyectos img {
+    height: 70vh;
+    margin: auto;
+  }
+  .slickness-proyectos-multiSlides img {
     height: 70vh;
     margin: auto;
   }
@@ -330,6 +397,13 @@ Media Queries
   .slickness-3 img {
     height: 60vh;
     margin: auto;
+  }
+  #Aristoteles-quote {
+    border: 3px solid rgba(0, 0, 0, .4);
+    padding: 3.5em;
+  }
+  #Aristoteles-quote p.lead {
+    font-size: 1.5em;
   }
 
 }

@@ -79,6 +79,19 @@ $(`.slickness-proyectos`).slick({
   ]
 });
 
+// Slick plugin for the project pages that will have a\3 slides onscreen, one row gallery slideshow
+$(`.slickness-proyectos-multiSlides`).slick({
+  autoplay: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false,
+  infinite: true,
+  swipeToSlide: true,
+  variableWidth: true,
+  centerMode: true
+});
+
 // to initialize Bootstrap Tooltips for each of the images on the Main Page picture Gallery
 $(function () {
   $('[data-toggle="tooltip"]').tooltip({

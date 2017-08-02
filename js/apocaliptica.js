@@ -71,9 +71,10 @@ $(`.slickness-proyectos`).slick({
       settings: {
         slidesToShow: 1,
         infinite: true,
-        dots: true,
+        dots: false,
         arrows: false,
-        variableWidth: true
+        variableWidth: true,
+        centerMode: true
       }
     }
   ]

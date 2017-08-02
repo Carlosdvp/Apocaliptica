@@ -204,6 +204,18 @@ Presentación
   margin-left: 0;
 }
 
+
+/* --------------------------------------
+YouTube Player
+----------------------------------------*/
+
+#player {
+  border: solid 2px darkred;
+  width: 70vw;
+  height: 50vh;
+}
+
+
 /* --------------------------------------
 Contacto
 ----------------------------------------*/
@@ -390,6 +402,11 @@ Media Queries
     font-size: 10px;
     margin-top: 4em;
   }
+  #player {
+    border: solid 2px darkred;
+    width: 100%;
+    height: 40vh;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 780px) {
@@ -422,6 +439,14 @@ Media Queries
     padding-right: .5em;
   }
 } 
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  #player {
+    border: solid 2px darkred;
+    width: 60vw;
+    height: 60vh;
+  }
+}
 
 /* For large and x-tra large screens */
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {

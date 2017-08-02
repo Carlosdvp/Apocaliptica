@@ -4,6 +4,7 @@ $('.navbar-nav>li>a').on('click', function(){
   $('.navbar-collapse').collapse('hide');
 });
 
+
 //slick plugin initializer and options for the home page, 
 // For the first Row slideshow on the homepage
 $(`.slickness`).slick({
@@ -105,16 +106,40 @@ $(function () {
 })
 
 
-// there has to be a way to customize the color of the text inside the tooltip. I think that this can be done either with CSS, or by using the HTML option for the tooltip combined with the text-danger Class for <p> elements.
+// JS code for the YouTube Player
 
+var tag = document.createElement('script');
+tag.id = 'iframe-demo';
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+  });
+}
+function onPlayerReady(event) {
+  document.getElementById('player').style.borderColor = 'firebrick';
+}
+function changeBorderColor(playerStatus) {
+  var color;
+  if (playerStatus == -1) {
+    color = "darkred"; // unstarted
+  } else if (playerStatus == 1) {
+    color = "firebrick"; // playing
+  } 
+  if (color) {
+    document.getElementById('player').style.borderColor = color;
+  }
+}
+function onPlayerStateChange(event) {
+  changeBorderColor(event.data);
+}
 
 
 // I need to clear the modal form input fields when it is closed, that is when either of the btn's are clicked on or the modal is closed       ---------------
-
-
-
-
-
-// to grab the navbar-brand text inside the <a> tag and align it to the baseline of the logo <img>
-// const brandLogo = document.getElementById('small-on-xs').textContent; //not doing anything with this yet
-

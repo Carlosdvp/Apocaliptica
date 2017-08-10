@@ -137,6 +137,11 @@ span.card {
   margin: auto;
 }
 
+.slickness-4 img {
+  height: 50vh;
+  margin: auto;
+}
+
 .slickness-proyectos img {
   height: 60vh;
   margin: auto;
@@ -209,10 +214,12 @@ Presentación
 YouTube Player
 ----------------------------------------*/
 
+#YT-player-container {}
+
 #player {
   border: solid 2px darkred;
-  width: 70vw;
-  height: 50vh;
+  width: 90vw;
+  height: 70vh;
 }
 
 
@@ -337,7 +344,6 @@ Media Queries
   #footer-logo-container {
     text-align: center;
   }
-
 }
 
 @media only screen and (max-width: 576px) {
@@ -359,6 +365,9 @@ Media Queries
     height: 30vh;
   }
   .slickness-3 img {
+    height: 30vh;
+  }
+  .slickness-4 img {
     height: 30vh;
   }
   .slickness-proyectos img {
@@ -396,7 +405,7 @@ Media Queries
   }
   #player {
     border: solid 2px darkred;
-    width: 100%;
+    width: 90vw;
     height: 40vh;
     min-height: 300px;
   }
@@ -434,7 +443,8 @@ Media Queries
   #player {
     border: solid 2px darkred;
     width: 60vw;
-    height: 60vh;
+    height: 70vh;
+    margin: 1em 0;
   }
 }
 
@@ -457,6 +467,10 @@ Media Queries
     margin: auto;
   }
   .slickness-3 img {
+    height: 60vh;
+    margin: auto;
+  }
+  .slickness-4 img {
     height: 60vh;
     margin: auto;
   }

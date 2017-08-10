@@ -57,6 +57,22 @@ $(`.slickness-3`).slick({
   centerMode: true
 });
 
+
+// Seccion de Presentación: Fotos del equipo Apocaliptica
+$(`.slickness-4`).slick({
+  autoplay: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  speed: 300,
+  dots: false,
+  arrows: false,
+  infinite: true,
+  swipeToSlide: true,
+  variableWidth: true,
+  centerMode: true
+});
+
+
 // Slick plugin for the project pages, one row gallery slideshow
 $(`.slickness-proyectos`).slick({
   autoplay: true,

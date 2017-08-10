@@ -123,9 +123,12 @@ function onYouTubeIframeAPIReady() {
       }
   });
 }
+
 function onPlayerReady(event) {
   document.getElementById('player').style.borderColor = 'firebrick';
+  event.target.playVideo();
 }
+
 function changeBorderColor(playerStatus) {
   var color;
   if (playerStatus == -1) {
@@ -137,9 +140,7 @@ function changeBorderColor(playerStatus) {
     document.getElementById('player').style.borderColor = color;
   }
 }
+
 function onPlayerStateChange(event) {
   changeBorderColor(event.data);
 }
-
-
-// I need to clear the modal form input fields when it is closed, that is when either of the btn's are clicked on or the modal is closed       ---------------

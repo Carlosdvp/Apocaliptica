@@ -293,10 +293,12 @@
       </div>
     <!-- Aqui termina la presentación  -->
 
-    <!-- YouTube player section -->
+    <!-- YouTube player section: set to play a playlist-->
       <div class="col text-center py-4" id="YT-player-container">
         <iframe class="img-thumbnail" id="player"
-          src="https://www.youtube.com/embed/tCRkCmWYISM?enablejsapi=1"
+          src="https://www.youtube.com/embed?
+    listType=playlist
+    &list=PLceXQ0k5cdMZdEIh7fjGfPLiASt8b0Eu0"
           frameborder="0">
         </iframe>
       </div>
@@ -339,13 +341,6 @@
             <br><small>Ingeniero</small>
           </p>
         </div>
-      </div>
-      <!-- Button Div -->
-      <div class="row">
-        <!-- Callout Button -->
-        <div class="col-2"></div>
-        <button type="button" class="btn btn-outline-danger btn-lg d-block col-8 mt-4" data-toggle="modal" data-target="#register" id="callout-btn">Póngase en Contacto</button>
-        <div class="col-2"></div>
       </div>
 
       <div class="row mt-5 pb-5">
@@ -422,75 +417,6 @@
       </div>
     </footer>
   <!-- End Footer -->
-
-  <!-- FORM Modal -->
-    <div id="register" class="modal fade">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header bg-inverse text-white">
-            <h4 class="modal-title">Póngase en Contacto con Nosotros</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-          <!-- Formulario de contacto -->
-            <form id="formulario-contacto">
-              <h5 class="mb-3">Su Información:</h5>
-              <div class="form-group">
-                <label class="sr-only" for="name">Nombre:</label>
-                <input type="text" class="form-control" id="name" placeholder="Nombre">
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="mail">Email:</label>
-                <input type="email" class="form-control" id="mail" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="phone">Teléfono:</label>
-                <input type="ephone" class="form-control" id="phone" placeholder="Teléfono">
-              </div>
-
-            <!-- Sección de intereses -->
-              <hr class="my-4">
-              <h5 class="mb-4">Cuáles Son Sus Areas de Interés?</h5>
-
-              <div class="form-group">
-                <div class="form-check">
-                  <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Construcción</span>
-                  </label>
-                </div>
-                <div class="form-check">
-                  <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Remodelación</span>
-                  </label>
-                </div>
-                <div class="form-check">
-                  <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input">
-                    <span class="custom-control-indicator"></span>
-                    <span class="custom-control-description">Diseño</span>
-                  </label>
-                </div>
-                <hr class="my-4">
-                <label for="mensaje"><h5>Mensaje</h5></label>
-                <textarea class="form-control" id="mensaje" rows="3"></textarea>
-              </div>
-            </form>
-          <!-- End Registration Form -->
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="submit" class="btn btn-outline-danger" id="submit-button">Guardar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!-- End modal -->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

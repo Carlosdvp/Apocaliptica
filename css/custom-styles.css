@@ -142,6 +142,11 @@ span.card {
   margin: auto;
 }
 
+.slickness-5 img {
+  height: 50vh;
+  margin: auto;
+}
+
 .slickness-proyectos img {
   height: 60vh;
   margin: auto;
@@ -370,6 +375,9 @@ Media Queries
   .slickness-4 img {
     height: 30vh;
   }
+  .slickness-5 img {
+    height: 30vh;
+  }
   .slickness-proyectos img {
     height: 40vh;
   }
@@ -471,6 +479,10 @@ Media Queries
     margin: auto;
   }
   .slickness-4 img {
+    height: 60vh;
+    margin: auto;
+  }
+  .slickness-5 img {
     height: 60vh;
     margin: auto;
   }

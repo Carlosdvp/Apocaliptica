@@ -17,25 +17,13 @@ $(`.slickness`).slick({
   swipeToSlide: true,
   variableWidth: true,
   centerMode: true
-  // responsive: [
-  //   {
-  //     breakpoint: 740,
-  //     settings: {
-  //       slidesToShow: 1,
-  //       infinite: true,
-  //       dots: true,
-  //       arrows: false,
-  //       variableWidth: true
-  //     }
-  //   }
-  // ]
 });
 // For the Second Row slideshow on the homepage
 $(`.slickness-2`).slick({
   autoplay: true,
   slidesToShow: 2,
   slidesToScroll: 1,
-  speed: 280,
+  speed: 310,
   dots: true,
   arrows: false,
   infinite: true,
@@ -48,7 +36,7 @@ $(`.slickness-3`).slick({
   autoplay: true,
   slidesToShow: 2,
   slidesToScroll: 1,
-  speed: 290,
+  speed: 300,
   dots: true,
   arrows: false,
   infinite: true,
@@ -61,9 +49,24 @@ $(`.slickness-3`).slick({
 // Seccion de Presentación: Fotos del equipo Apocaliptica
 $(`.slickness-4`).slick({
   autoplay: true,
-  slidesToShow: 1,
+  lazyLoad: 'ondemand',
+  slidesToShow: 2,
   slidesToScroll: 1,
-  speed: 300,
+  speed: 400,
+  dots: false,
+  arrows: false,
+  infinite: true,
+  swipeToSlide: true,
+  variableWidth: true,
+  centerMode: true
+});
+
+//Slick gallery 5: proximos proyectos
+$(`.slickness-5`).slick({
+  autoplay: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  speed: 420,
   dots: false,
   arrows: false,
   infinite: true,

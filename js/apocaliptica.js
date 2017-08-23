@@ -61,7 +61,7 @@ $(`.slickness-3`).slick({
 // Seccion de Presentación: Fotos del equipo Apocaliptica
 $(`.slickness-4`).slick({
   autoplay: true,
-  slidesToShow: 2,
+  slidesToShow: 1,
   slidesToScroll: 1,
   speed: 300,
   dots: false,
@@ -97,7 +97,7 @@ $(`.slickness-proyectos`).slick({
   ]
 });
 
-// Slick plugin for the project pages that will have a\3 slides onscreen, one row gallery slideshow
+// Slick plugin for the project pages that will have 3 slides onscreen, one row gallery slideshow
 $(`.slickness-proyectos-multiSlides`).slick({
   autoplay: true,
   slidesToShow: 3,

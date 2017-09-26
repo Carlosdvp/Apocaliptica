@@ -236,7 +236,14 @@ Contacto
 ----------------------------------------*/
 
 #contacto {
-  background-color: rgba(0, 0, 0, .4);
+  /* background-color: rgba(0, 0, 0, .4); */
+  /* to create a filter over a background image */
+  background:  linear-gradient(
+    rgba(250, 250, 250, .3),
+    rgba(250, 250, 250, .3)
+  ),
+  url('../../pics/background-contacto.jpg');
+  background-repeat: repeat;
   font-family: 'Pathway Gothic One', sans-serif;
 }
 
@@ -278,13 +285,9 @@ Contacto
   color: ghostwhite;
 }
 
-.email {
+.email {}
 
-}
-
-#contact-information {
-
-}
+#contact-information {}
 
 #location-map {
   width: 100%;

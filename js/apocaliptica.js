@@ -1,4 +1,3 @@
-
 // to collapse the navbar when I click on one of the links
 $('.navbar-nav>li>a').on('click', function(){
   $('.navbar-collapse').collapse('hide');
@@ -7,7 +6,7 @@ $('.navbar-nav>li>a').on('click', function(){
 
 //slick plugin initializer and options for the home page, 
 // For the first Row slideshow on the homepage
-$(`.slickness`).slick({
+$('.slickness').slick({
   autoplay: true,
   slidesToShow: 2,
   slidesToScroll: 1,
@@ -19,7 +18,7 @@ $(`.slickness`).slick({
   centerMode: true
 });
 // For the Second Row slideshow on the homepage
-$(`.slickness-2`).slick({
+$('.slickness-2').slick({
   autoplay: true,
   slidesToShow: 2,
   slidesToScroll: 1,
@@ -32,7 +31,7 @@ $(`.slickness-2`).slick({
   centerMode: true
 });
 // For the Third Row slideshow on the Homepage
-$(`.slickness-3`).slick({
+$('.slickness-3').slick({
   autoplay: true,
   slidesToShow: 2,
   slidesToScroll: 1,
@@ -47,7 +46,7 @@ $(`.slickness-3`).slick({
 
 
 // Seccion de Presentación: Fotos del equipo Apocaliptica
-$(`.slickness-4`).slick({
+$('.slickness-4').slick({
   autoplay: true,
   lazyLoad: 'ondemand',
   slidesToShow: 2,
@@ -62,7 +61,7 @@ $(`.slickness-4`).slick({
 });
 
 //Slick gallery 5: proximos proyectos
-$(`.slickness-5`).slick({
+$('.slickness-5').slick({
   autoplay: true,
   slidesToShow: 2,
   slidesToScroll: 1,
@@ -77,7 +76,7 @@ $(`.slickness-5`).slick({
 
 
 // Slick plugin for the project pages, one row gallery slideshow
-$(`.slickness-proyectos`).slick({
+$('.slickness-proyectos').slick({
   autoplay: true,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -101,7 +100,7 @@ $(`.slickness-proyectos`).slick({
 });
 
 // Slick plugin for the project pages that will have 3 slides onscreen, one row gallery slideshow
-$(`.slickness-proyectos-multiSlides`).slick({
+$('.slickness-proyectos-multiSlides').slick({
   autoplay: true,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -116,10 +115,10 @@ $(`.slickness-proyectos-multiSlides`).slick({
 // to initialize Bootstrap Tooltips for each of the images on the Main Page picture Gallery
 $(function () {
   $('[data-toggle="tooltip"]').tooltip({
-    container: `body`,
-    placement: `bottom`,
-    trigger: `hover`,
-    offset: `50 0`,
+    container: 'body',
+    placement: 'bottom',
+    trigger: 'hover',
+    offset: '50 0',
     animation: false
   })
 })

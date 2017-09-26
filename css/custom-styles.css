@@ -2,6 +2,8 @@
 Font Families
 ----------------------------------------*/
 
+/* Had to import each font on a separate link tag to fix a bug, it wasn't getting both fonts from the CDN when on the same link tag: */
+
 /* font-family: 'Voltaire', sans-serif; */
 /* font-family: 'Pathway Gothic One', sans-serif; */
 
@@ -66,7 +68,7 @@ Jumbotron
 }
 
 .jumbotron {
-  background-image: url('../pics/background-main.jpg');
+  background-image: url('../../pics/background-main.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -194,7 +196,7 @@ Presentación
     rgba(250, 250, 250, .3),
     rgba(250, 250, 250, .3)
   ),
-  url('../pics/Proyectos/homepage/boceto-2.jpg');
+  url('../../pics/Proyectos/homepage/boceto-2.jpg');
 
   background-repeat: no-repeat;
   background-position: center;
@@ -276,9 +278,13 @@ Contacto
   color: ghostwhite;
 }
 
-.email {}
+.email {
 
-#contact-information {}
+}
+
+#contact-information {
+
+}
 
 #location-map {
   width: 100%;
